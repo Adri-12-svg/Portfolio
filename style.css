@@ -1,0 +1,363 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  
+  #menu {
+    z-index: 2;
+  }
+  
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+
+  .bar {
+    height: 3px;
+    width: 60%;
+    background-color: #DC052D;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .home .content .head{
+    font-size: 50px;
+    color:#eee
+    
+  }
+  .home .content {
+    font-size: 20px ;
+    color:#eee
+    
+  }
+  .home .content .btn{
+    font-size: 17px;
+    color:#eee;
+    width: 50px;
+    background-color: #04AA6D;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #04AA6D;
+    border-radius: 15px;
+    opacity:0.5;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .home .content .btn:hover {opacity: 1}
+
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .instagram {
+    background: #E4405F;
+    color: white;
+  }
+  .fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 45%;
+    margin: 20px;
+}
+.roundedFixedBtn{
+  height: 20px;
+  line-height: 40px;  
+  width: 20px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .topnav-centered a {
+    float: none;
+    position:fixed;
+    top: 33px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  section{
+    padding:2rem 7%;
+}
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .topnav-right {
+        float: right;
+    }
+    .topnav-centered a {
+        position: relative;
+        top: 33px;
+        left: 10px;
+        transform: none;
+      }
+    
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  .home{
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+    background:url("file:///C:/Users/Adrij/Documents/Intern/nature%20at%20sunner.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+
+  }
+  .home .content{
+    max-width:60rem;
+  }
+  .home .content h3{
+    font: size 6rem;;
+    text-transform:uppercase;
+    color:#ffffff;
+  }
+  .home .content p{
+    font-size:2 rem;
+    font-weight:lighter;
+    line-height:1.8;
+    padding:1 rem 0;
+    color:#eee;
+
+  }
+  * {
+    scroll-snap-type: x proximity;
+}
+@media(max-width:991px){
+    html{
+        font-size:55%;
+    }
+
+    section{
+        padding:2rem;
+    }
+    .home{
+      background-position: left;
+      justify-content: center;
+      text-align:center;
+    }
+    .home .content h3{
+      font-size: 4.5rem;
+
+    }
+    .home .content p{
+      font-size: 1.5rem;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+

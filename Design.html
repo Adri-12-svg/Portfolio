@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet"href="Design.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/56736acea5.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--Nav bar-->
+    <div class="topnav">
+        <div class="topnav-centered">
+            <a href="index.html"><b>AB.</b></a>
+        </div>
+        <div class="topnav-right">
+            <a  href="index.html">Home</a>
+            <a href="Design.html">Design</a>
+            <a href="About.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Contact
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <div class="social-networks">
+                            <i class="fa-brands fa-facebook fa-xl"></i>
+                        </div>
+                        <br>
+                        <div class="data">
+                            <p class="bold">
+                                Facebook
+                            </p>
+                            <a href="https://www.facebook.com/adrij.bhattacharya.35?mibextid=ZbWKwL"target="_main">Facebook</a>
+                        </div>
+                    </ul>
+                    <br>
+                    <ul>
+                        <div class="social-networks"> 
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </div>
+                        <br>
+                        <div class="data">
+                            <p class="bold">
+                                </i>Instagram
+                            </p>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F__adrij__affected__spoiled__%3Ffbclid%3DIwAR2v_NlNRpkTwNoZTihOUbVpLcrgodrNM5IpZ730GF8gmmknDt0Siy7b0TQ&h=AT1AznMRQBxxbKzQVVdO8Ag5q_dogAc_1W4juDzxuOfudYeBIgsBwY7-6g7mPzoy0gQSWZoS9VIk6WToPpnKBnVJTbdfHkf50WJY-i_dWnzHM15b6PaUM3yK1_u2v7BfXkE1WQ"target="_main">Instagram</a>
+                        </div>
+                    </ul>
+                    <br>
+                    <ul>
+                        <div class="social-networks">
+                            <i class="fa-brands fa-linkedin fa-xl"></i>
+                        </div>
+                        <br>
+                        <div class="data">
+                            <p class="bold">
+                                Linkedin
+                            </p>
+                            <a href="https://www.linkedin.com/in/adrij-bhattacharya-9180bb259"target="_main">LinkedIn</a>
+                        </div>
+                    </ul>
+                    <br>
+                    <ul>
+                        <div class="social-networks">
+                            <i class="fa-solid fa-envelope fa-xl"></i></fa-solid>
+                        </div>
+                        <br>
+                        <div class="data">
+                            <p class="bold">
+                                Mail
+                            </p>
+                            <a href="#"target="_main">Mail</a><!--Search how to direct a user to his mail account with my mail id as the sent mail-->
+                            
+                        </div>
+                    </ul>
+                </div>
+              </div>
+            <a href="#about">About</a>
+            <a class="active" href="message.html">Let's chat</a><!--learn how to develop a message page in website with backend-->
+
+        </div>
+    </div>
+    <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Design.html"target="_main">Design</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Blog</a></li><!--Search how to develop a Blog page-->
+              </ul>
+            </nav> 
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+          
+
+
+
+    <div class="icon-bar">
+            <a href="https://www.facebook.com/adrij.bhattacharya.35?mibextid=ZbWKwL" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="https://www.linkedin.com/in/adrij-bhattacharya-9180bb259" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F__adrij__affected__spoiled__%3Ffbclid%3DIwAR2v_NlNRpkTwNoZTihOUbVpLcrgodrNM5IpZ730GF8gmmknDt0Siy7b0TQ&h=AT1AznMRQBxxbKzQVVdO8Ag5q_dogAc_1W4juDzxuOfudYeBIgsBwY7-6g7mPzoy0gQSWZoS9VIk6WToPpnKBnVJTbdfHkf50WJY-i_dWnzHM15b6PaUM3yK1_u2v7BfXkE1WQ" class="instagram"><i class="fa fa-instagram"></i></a> 
+        </div>
+
+
+          
+    <a class="fixedButton" href="message.html">
+    <div class="roundedFixedBtn"><i class="fa fa-Message"></i></div>
+        </a>
+   
+    <div class="menu-bg" id="menu-bg"></div>
+    <!--Body section starts-->
+    <div class="container">
+        <div class="left-text">
+            <h2 class="heading">My Portfolio</h2>
+            <p class="subheading">Good design is obvious. Great design is transparent.
+            <br>
+             ~Joe Sparano</p>
+
+        </div>
+        <div class="gallery">
+            <div class="box row-2" id="box-1" style="background-image: url(https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);"><a href="Photoshop.html">Photoshop</a></div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80);"><a href="Illustrator.html">Illustrator</a></div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1497449493050-aad1e7cad165?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80);"><a href="Figma.html">Figma</a></div>
+            <div class="box row-2" style="background-image: url(https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);"><a href="Photography.html">Photography</a></div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);"><a href="mostudio-master/Internship.html">Internships</a></div>
+
+        </div>
+    </div>
+</body>
+</html>
